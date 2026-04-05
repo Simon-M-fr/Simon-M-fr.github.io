@@ -4,11 +4,22 @@ body {
   background: #f7f5ef;
   color: #2f3440;
   line-height: 1.65;
-
 }
 
 a {
-@@ -23,7 +24,7 @@
+  color: #5378a8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  border-bottom: 1px solid #ddd6c8;
+  background: #f7f5ef;
+}
+
 .nav {
   max-width: 1220px;
   margin: 0 auto;
@@ -16,7 +27,34 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-@@ -58,13 +59,13 @@
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: #232838;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.nav-links a {
+  color: #6f7682;
+}
+
+.nav-links a.active {
+  color: #5378a8;
+  font-weight: 600;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -30,7 +68,13 @@ a {
   align-items: start;
   max-width: 980px;
   margin: 40px auto 0;
-@@ -78,37 +79,28 @@
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
   border: 1px solid #ddd6c8;
 }
 
@@ -58,10 +102,6 @@ a {
 
 .bio p {
   margin: 0 0 22px;
-
-
-
-
 }
 
 
@@ -72,7 +112,33 @@ a {
   margin: 0 auto;
 }
 
-@@ -142,11 +134,11 @@
+
+/* CV HEADER */
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.cv-name {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cv-subtitle,
+.cv-contact {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6f7682;
+  font-size: 15px;
+}
+
+.cv-contact {
+  margin-top: 6px;
+}
+
+
 /* SECTION TITLES */
 
 .section-title {
@@ -84,7 +150,9 @@ a {
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
-@@ -156,7 +148,7 @@
+
+
+/* CV */
 
 .cv-entry,
 .research-entry {
@@ -92,7 +160,30 @@ a {
 }
 
 .cv-row {
-@@ -187,31 +179,27 @@
+  display: grid;
+  grid-template-columns: 1fr 170px;
+  gap: 24px;
+}
+
+.cv-date {
+  text-align: right;
+  color: #6f7682;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.entry-title {
+  font-weight: 700;
+}
+
+.entry-sub {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.entry-note {
+  color: #4c5160;
+}
+
+
 /* RESEARCH */
 
 .research-section {
@@ -124,7 +215,18 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@@ -230,7 +218,7 @@
+
+/* REFERENCES */
+
+.references-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+/* FOOTER */
+
 .footer {
   border-top: 1px solid #ddd6c8;
   text-align: center;
@@ -132,7 +234,19 @@ a {
   color: #7d8491;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-@@ -250,11 +238,6 @@
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .home-grid,
+  .cv-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-date {
     text-align: left;
   }
 
@@ -144,13 +258,9 @@ a {
   .nav {
     flex-direction: column;
     gap: 14px;
-@@ -263,4 +246,9 @@
+  }
+
   .references-grid {
     grid-template-columns: 1fr;
   }
-
-
-
-
-
 }
