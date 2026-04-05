@@ -232,3 +232,8 @@ grid-template-columns: 1fr;
 .research-entry {
   text-align: justify;
 }
+
+.bio p {
+  text-align: justify;
+  hyphens: auto;
+}
