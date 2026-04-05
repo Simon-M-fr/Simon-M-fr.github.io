@@ -224,3 +224,11 @@ gap: 40px;
 grid-template-columns: 1fr;
 }
 }
+
+.research-section p {
+  text-align: justify;
+}
+
+.research-entry {
+  text-align: justify;
+}
