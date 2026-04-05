@@ -112,6 +112,11 @@ a:hover {
 
 .bio p {
   margin: 0 0 22px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 
