@@ -212,3 +212,15 @@ a:hover {
     gap: 14px;
   }
 }
+
+.references-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+}
+
+@media (max-width: 900px) {
+.references-grid {
+grid-template-columns: 1fr;
+}
+}
