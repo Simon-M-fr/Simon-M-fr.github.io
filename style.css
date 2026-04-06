@@ -272,3 +272,16 @@ a:hover {
 
 
 }
+
+/* =========================
+   iPad / Tablet Fix
+========================= */
+
+@media (max-width: 1024px) {
+
+  .intro img {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
