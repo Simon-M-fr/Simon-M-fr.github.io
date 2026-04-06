@@ -57,9 +57,6 @@ a:hover {
 
 .nav-links a {
   color: #6f7682;
-
-
-
 }
 
 .nav-links a.active {
@@ -81,8 +78,6 @@ a:hover {
 .main-narrow {
   max-width: 820px;
   margin: 0 auto;
-
-
 }
 
 
@@ -161,10 +156,6 @@ a:hover {
 
 .research-entry p {
   text-align: justify;
-
-
-
-
 }
 
 .paper-title {
@@ -219,39 +210,44 @@ a:hover {
   color: #7d8491;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-
-
-
 }
 
 
 /* =========================
-   MOBILE
+   MOBILE / TABLET
 ========================= */
 
+@media (max-width: 1024px) {
+  .profile-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cv-viewer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cv-frame {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
-
-
-
-
   .home-grid {
     grid-template-columns: 1fr;
-
   }
 
   .home-title {
     font-size: 36px;
-
   }
 
-
-
-
-
-
-
   .nav {
-
     flex-direction: column;
     gap: 14px;
   }
@@ -259,50 +255,10 @@ a:hover {
   .cv-frame {
     height: 900px;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .cv-frame {
     height: 700px;
   }
-
-
-
-
-}
-
-@media (max-width: 1024px) {
-
-  .cv-container,
-  .cv-preview,
-  .pdf-wrapper {
-    text-align: center;
-  }
-
-  .cv-container img,
-  .cv-preview img,
-  .pdf-wrapper img,
-  .pdf-wrapper iframe,
-  iframe {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-/* =========================
-   iPad / Tablet Fix
-========================= */
-
-@media (max-width: 1024px) {
-
-  .profile-photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
