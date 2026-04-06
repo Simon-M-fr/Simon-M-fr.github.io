@@ -273,6 +273,26 @@ a:hover {
 
 }
 
+@media (max-width: 1024px) {
+
+  .cv-container,
+  .cv-preview,
+  .pdf-wrapper {
+    text-align: center;
+  }
+
+  .cv-container img,
+  .cv-preview img,
+  .pdf-wrapper img,
+  .pdf-wrapper iframe,
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 /* =========================
    iPad / Tablet Fix
 ========================= */
