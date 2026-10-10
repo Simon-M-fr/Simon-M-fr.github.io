@@ -164,6 +164,16 @@ a:hover {
   margin-bottom: 6px;
 }
 
+.paper-title a {
+  color: inherit;
+}
+
+.paper-authors {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .paper-meta {
   color: #6f7682;
   font-style: italic;
